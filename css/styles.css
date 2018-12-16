@@ -1,0 +1,56 @@
+body{
+  background-color: #edecec;
+}
+.heading{
+  text-align: center;
+}
+.heading .panel{
+  margin-top: 70px;
+  border-color: #A1BAE2;
+}
+.heading .panel-heading{
+  background-color: #A1BAE2;
+  border-bottom: 0px;
+  color: #FBD3D1;
+}
+.heading h1{
+  font-size: 40px;
+  font-weight: bolder;
+}
+#intro-form{
+  text-align: center;
+}
+form{
+  margin: 0 auto;
+  width: 250px;
+}
+input[type=text]{
+  background: #f1f1f1;
+  border: none;
+  padding: 20px;
+  margin: 5px 0 22px 0;
+  width: 100%;
+}
+input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+button.submitbtn{
+  background-color: #A1BAE2;
+  border-bottom: 0px;
+  border-right: 0px;
+  color: #FBD3D1;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 16px 20px;
+  width: 100%;
+}
+#game{
+  display: none;
+}
+#player {
+  background-color: #FEC0CB;
+}
+#rules{
+  background-color: #B6CBEA;
+}
