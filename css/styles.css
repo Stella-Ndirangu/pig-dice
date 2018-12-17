@@ -1,6 +1,10 @@
 body{
   background-color: #edecec;
 }
+.container-fluid{
+  padding-left: 100px;
+  padding-right: 100px;
+}
 .heading{
   text-align: center;
 }
@@ -45,12 +49,30 @@ button.submitbtn{
   padding: 16px 20px;
   width: 100%;
 }
-#game{
+/*#game{
   display: none;
+}*/
+#rules .panel{
+  border-color: #FBD3D1;
 }
-#player {
-  background-color: #FEC0CB;
+#gamearea .panel{
+  border-color: #FBD3D1;
 }
-#rules{
-  background-color: #B6CBEA;
+#rules .panel-body{
+  background-color: #FBD3D1;
+  color: #696969;
+}
+#rules h2{
+  text-decoration: underline;
+}
+#gamearea .panel-body{
+  background-color: #FBD3D1;
+  color: #696969;
+  border: none;
+}
+#gamearea img{
+  width: 25%;
+}
+#gamearea #p2{
+  margin-left: auto;
 }
