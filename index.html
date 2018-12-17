@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <div class="heading">
       <div class="panel panel-info">
         <div class="panel-heading">
@@ -32,23 +32,66 @@
         </div>
         <button type="submit" class="submitbtn">Start Game</button>
       </form>
-    </div>
+    </div> <br>
 
 
     <div id="game">
       <div class="row">
-        <div class="col-md-9">
-          <div class="panel panel-info">
-            <p>Start<span class="player1">:</span></p>
+        <div class="col-md-8">
+          <div id="gamearea">
+            <div class="panel panel-info">
+              <div class="panel-body">
+                <div class="player1area">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div id="p1">
+                        <img src="images/player.png" alt="player image">
+                        <p><span class="player1">:</span></p>
+                        <button type="button" class="player1button">Roll Dice</button>
+                        <button type="button" class="passbutton1">Pass Turn</button> <br>
+                        <p>Score: </p>
+                        <p>Turn Total: </p>
+                      </div>
+                    </div>
 
+                    <div class="col-md-6">
+                      <div id="p2">
+                        <img src="images/player.png" alt="player image">
+                        <p><span class="player2">:</span></p>
+                        <button type="button" class="player2button">Roll Dice</button>
+                        <button type="button" class="passbutton2">Pass Turn</button> <br>
+                        <p>Score: </p>
+                        <p>Turn Total: </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
         </div>
 
 
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div id="rules">
-            <h2>Objectives</h2>
+            <div class="panel panel-info">
+              <div class="panel-body">
+                <h2>Objective</h2>
+                <p>The objective of Pig Dice Game is to score 100 points before the opponent(s) do(es). The Pig game is played with a single six-sided die.</p>
+                <h2>Gameplay</h2>
+                <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
+                  <ul>
+                    <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+                    <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+                    <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+                  </ul>
+                  The first player to score 100 or more points wins.<br>
+                  For example, the first player, Anne, begins a turn with a roll of 5. Anne could hold and score 5 points, but chooses to roll again. Anne rolls a 2, and could hold with a turn total of 7 points, but chooses to roll again. Anne rolls a 1, and must end her turn without scoring. The next player, Bob, rolls the sequence 4-5-3-5-5, after which he chooses to hold, and adds his turn total of 22 points to his score.</p>
+                  <br>
+                  Gameplay source: <a href="https://en.wikipedia.org/wiki/Pig_(dice_game)">Wikipedia</a>
+              </div>
+
+            </div>
 
           </div>
         </div>
