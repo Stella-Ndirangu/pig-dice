@@ -55,7 +55,7 @@ button.submitbtn{
 #rules .panel{
   border-color: #FBD3D1;
 }
-#gamearea .panel{
+#game .panel{
   border-color: #FBD3D1;
 }
 #rules .panel-body{
@@ -65,14 +65,29 @@ button.submitbtn{
 #rules h2{
   text-decoration: underline;
 }
-#gamearea .panel-body{
+#game .panel-body{
   background-color: #FBD3D1;
   color: #696969;
   border: none;
 }
-#gamearea img{
-  width: 25%;
+#game .gamearea {
+  text-align: center;
 }
-#gamearea #p2{
+#game .gamearea #p1 img{
+  width: 20%;
+}
+#game .gamearea #p2 img{
+  width: 20%;
+}
+#game #p1{
   margin-left: auto;
+}
+#game #dice {
+  text-align: center;
+}
+#game .gamearea .diceRoll img {
+  width: 10%;
+}
+#game .player1button{
+  color: red;
 }
