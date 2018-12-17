@@ -91,3 +91,7 @@ button.submitbtn{
 #game .player1button{
   color: red;
 }
+.disableDiv {
+  pointer-events: none;
+  opacity: 0.5;
+}
