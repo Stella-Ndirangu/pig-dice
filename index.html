@@ -44,12 +44,14 @@
               <div class="col-md-6">
                 <div class="player1area">
                   <div id="p1">
+                    <p id="turnPlayer1">It's <span class="player1"></span>'s Turn!</p>
                     <img src="images/player.png" alt="player image">
                     <p><span class="player1">:</span></p>
-                    <input type="button" value="Roll Dice" onclick="rollDice()">
+                    <input type="button" value="Roll Dice" id="die1">
                     <input type="button" value="Pass Turn" id="passbutton1"> <br>
-                    <p>Score: </p>
-                    <p>Turn Total: </p>
+                    <p>Score: </p><p class="score1"></p>
+                    <p>Turn Total: </p><p class="turnTotal1"></p>
+
                   </div>
                 </div>
               </div>
@@ -57,18 +59,21 @@
               <div class="col-md-6">
                 <div class="player2area">
                   <div id="p2">
+                    <p id="turnPlayer2">It's <span class="player2"></span>'s Turn!</p>
                     <img src="images/player.png" alt="player image">
                     <p><span class="player2">:</span></p>
-                    <input type="button" value="Roll Dice" onclick="rollDice()">
+                    <input type="button" value="Roll Dice" id="die2">
                     <input type="button" value="Pass Turn" id="passbutton2"> <br>
-                    <p>Score: </p>
-                    <p>Turn Total: </p>
+                    <p>Score: </p><p class="score2"></p>
+                    <p>Turn Total: </p><p class="turnTotal2"></p>
+
                   </div>
                 </div>
               </div>
             </div>
             <div class="diceRoll">
               <img src="images/1.png" alt="player image" name="die">
+              <p class="noScore">No score for this turn!</p>
 
             </div>
           </div>
