@@ -7,9 +7,30 @@ The Pig Dice game is played by 2 players. The first person to start the game rol
 * Web browser
 ## Specifications
 The website
-1. Displays an error message when no names are entered
+1. Displays a form to enter Player names
+* INPUT: "Player names entered"
+*OUTPUT: "Shows player names entered"
+2. Displays an error message when no names are entered
 * INPUT:""
 * OUTPUT: "Please fill in this field"
+3. Allows user/player to start game by clicking button
+* INPUT: "Click Start Game button"
+* OUTPUT: "Displays the game area"
+4. Allows player to roll dice
+* INPUT: "Click Roll dice button"
+* OUTPUT: "Shows player score and the turn total displayed by dice"
+5. Allows User to Pass the turn to the opponent
+* INPUT: "Click on Pass Turn button"
+* OUTPUT: "Disables player and enables next player to play"
+6. Displays an alert message when the roll dice is 1
+* INPUT: "Click on Roll Dice and it displays 1"
+* OUTPUT: "No Score for this turn"
+7. Displays a message when the first player reaches a score of 100
+* INPUT: "Roll dice back and forth till score is 100"
+* OUTPUT: "(Player name) wins!!!"
+8. Allows user to start the game again
+* INPUT: "Click on Play Again button"
+* OUTPUT: Reloads the game
 
 ## Known Bugs
 There are no known bugs.
