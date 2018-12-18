@@ -7,7 +7,8 @@ function rollDice(){
 function Player(score){
   this.score = score;
 }
-var turnTotal = 0;
+var turnTotal1 = 0;
+var turnTotal2 = 0;
 var score1 = 0;
 var score2 = 0;
 
@@ -23,24 +24,6 @@ var side5 =  new Image();
 side5.src = "images/5.png";
 var side6 = new Image();
 side6.src = "images/6.png";
-
-Player.prototype.diceGame = function(rollDice){
-  if (randomRoll == 1) {
-    turnTotal = 0;
-    $(".turnTotal1").text(turnTotal);
-    $(".diceRoll .noScore").show();
-    $("#p1").addClass("disableDiv");
-    $("#p2").removeClass("disableDiv");
-    $(".player2area #turnPlayer2").show();
-    return false
-  } else {
-    $("alert").text("");
-    turnTotal += randomRoll;
-    (".turnTotal1").text(turnTotal);
-    return true;
-  }
-}
-
 
 
 //------------------User Interface Logic-------------------
@@ -79,19 +62,29 @@ $(document).ready(function(){
     var diceFace1 = rollDice();
     score1 += diceFace1;
     $(".score1").text(score1);
-    //turnTotal = randomRoll;
     $(".turnTotal1").text(diceFace1);
-    alert (diceFace1);
+    if (diceFace1 == 1){
+      alert("No score for this turn!");
+      $("#p1").addClass("disableDiv");
+      $("#p2").removeClass("disableDiv");
+      $(".player2area #turnPlayer2").show();
+      $(".turnTotal1").text("");
+    }
   });
+
   $(".player2area #die2").click(function(){
     $("#p1").addClass("disableDiv");
     var diceFace2 = rollDice();
     score2 += diceFace2;
     $(".score2").text(score2);
-    //turnTotal = randomRoll;
     $(".turnTotal2").text(diceFace2);
-    alert (diceFace2);
-
+    if (diceFace2 == 1){
+      alert("No score for this turn!");
+      $("#p2").addClass("disableDiv");
+      $("#p1").removeClass("disableDiv");
+      $(".player1area #turnPlayer1").show();
+      $(".turnTotal2").text("");
+    }
   });
 
 
