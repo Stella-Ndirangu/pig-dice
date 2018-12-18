@@ -104,6 +104,6 @@ button.submitbtn{
 .noScore{
   display: none;
 }
-.winner{
+.diceRoll .win{
   display:none;
 }
