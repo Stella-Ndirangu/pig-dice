@@ -37,7 +37,7 @@ $(document).ready(function(){
       $("." + playername).text(userInput);
     });
 
-    //$("#intro-form").hide();
+    $("#intro-form").hide();
     $("#game").show();
 
     event.preventDefault();
@@ -48,11 +48,13 @@ $(document).ready(function(){
     $("#p1").addClass("disableDiv");
     $("#p2").removeClass("disableDiv");
     $(".player2area #turnPlayer2").show();
+    $(".turnTotal1").text("");
   });
   $("#game #passbutton2").click(function(event){
     $("#p2").addClass("disableDiv");
     $("#p1").removeClass("disableDiv");
     $(".player1area #turnPlayer1").show();
+    $(".turnTotal2").text("");
   });
 
 //Roll Dice Buttons
@@ -69,6 +71,20 @@ $(document).ready(function(){
       $("#p2").removeClass("disableDiv");
       $(".player2area #turnPlayer2").show();
       $(".turnTotal1").text("");
+    }
+    if (score1 >= 100) {
+      $(".player1Win").show();
+      $(".diceRoll .playAgain").show();
+      $(".diceRoll .playAgain").click(function(){
+        location.reload();
+      });
+    }
+    if (score2 >= 100) {
+      $(".player2Win").show();
+      $(".diceRoll .playAgain").show();
+      $(".diceRoll .playAgain").click(function(){
+        location.reload();
+      });
     }
   });
 
@@ -87,22 +103,17 @@ $(document).ready(function(){
     }
     if (score1 >= 100) {
       $(".player1Win").show();
-      //$("#p1").addClass("disableDiv");
-      //$("#p2").addClass("disableDiv");
       $(".diceRoll .playAgain").show();
       $(".diceRoll .playAgain").click(function(){
         location.reload();
       });
-    } else if (score2 >= 100) {
+    }
+    if (score2 >= 100) {
       $(".player2Win").show();
-      //$("#p1").addClass("disableDiv");
-      //$("#p2").addClass("disableDiv");
       $(".diceRoll .playAgain").show();
       $(".diceRoll .playAgain").click(function(){
         location.reload();
       });
-    } else {
-      $(".diceRoll").text();
     }
 
   });

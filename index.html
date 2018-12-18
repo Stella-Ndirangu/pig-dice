@@ -6,6 +6,9 @@
   <title>PIG DICE</title>
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charm">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
   <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
   <script src="js/scripts.js" charset="utf-8"></script>
 </head>
@@ -37,74 +40,85 @@
     <div id="game">
       <div class="panel panel-info">
         <div class="panel-body">
-          <div class="gamearea">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="gamearea">
 
 
-            <div class="row">
-              <div class="col-md-6">
-                <div class="player1area">
-                  <div id="p1">
-                    <p id="turnPlayer1">It's <span class="player1"></span>'s Turn!</p>
-                    <img src="images/player.png" alt="player image">
-                    <p><span class="player1">:</span></p>
-                    <input type="button" value="Roll Dice" id="die1">
-                    <input type="button" value="Pass Turn" id="passbutton1"> <br>
-                    <p>Score: </p><p class="score1"></p>
-                    <p>Turn Total: </p><p class="turnTotal1"></p>
+                <div class="row">
+                  <!--first player-->
+                  <div class="col-md-6">
+                    <div class="player1area">
+                      <div id="p1">
+                        <p id="turnPlayer1">It's <span class="player1"></span>'s Turn!</p>
+                        <img src="images/player.png" alt="player image">
+                        <p><span class="player1">:</span></p>
+                        <input type="button" value="Roll Dice" id="die1">
+                        <input type="button" value="Pass Turn" id="passbutton1"> <br>
+                        <p class="scoreClass">Score: </p><p class="score1"></p>
+                        <p class="turnClass">Turn Total: </p><p class="turnTotal1"></p>
 
+                      </div>
+                    </div>
+                  </div>
+                  <!--2nd player  -->
+                  <div class="col-md-6">
+                    <div class="player2area">
+                      <div id="p2">
+                        <p id="turnPlayer2">It's <span class="player2"></span>'s Turn!</p>
+                        <img src="images/player.png" alt="player image">
+                        <p><span class="player2">:</span></p>
+                        <input type="button" value="Roll Dice" id="die2">
+                        <input type="button" value="Pass Turn" id="passbutton2"> <br>
+                        <p class="scoreClass">Score: </p><p class="score2"></p>
+                        <p class="turnClass">Turn Total: </p><p class="turnTotal2"></p>
+
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!--2nd player  -->
-              <div class="col-md-6">
-                <div class="player2area">
-                  <div id="p2">
-                    <p id="turnPlayer2">It's <span class="player2"></span>'s Turn!</p>
-                    <img src="images/player.png" alt="player image">
-                    <p><span class="player2">:</span></p>
-                    <input type="button" value="Roll Dice" id="die2">
-                    <input type="button" value="Pass Turn" id="passbutton2"> <br>
-                    <p>Score: </p><p class="score2"></p>
-                    <p>Turn Total: </p><p class="turnTotal2"></p>
+                <div class="diceRoll">
+                  <img src="images/1.png" alt="player image" name="die"><br><br>
+                  <p class="noScore">No score for this turn!</p>
+                  <p class="player1Win"><span class="player1"></span> WINS!!!!</p>
+                  <p class=player2Win><span class="player2"></span> WINS!!!!</p>
+                  <button type="button" class="playAgain">Play Again</button>
 
-                  </div>
                 </div>
               </div>
-            </div>
-            <div class="diceRoll">
-              <img src="images/1.png" alt="player image" name="die">
-              <p class="noScore">No score for this turn!</p>
-              <p class="player1Win"><span class="player1"></span>WINS!!!!</p>
-              <p class=player2Win><span class="player2"></span>WINS!!!!</p>
-              <button type="button" class="playAgain">Play Again</button>
+            </div><!--end col game -->
 
+            <div class="col-md-4">
+              <div id="rules">
+                <div class="panel panel-info">
+                  <div class="panel-body">
+                    <h2>Objective</h2>
+                    <p>The objective of Pig Dice Game is to score 100 points before the opponent(s) do(es). The Pig game is played with a single six-sided die.</p>
+                    <h2>Gameplay</h2>
+                    <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
+                      <ul>
+                        <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+                        <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+                        <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+                      </ul>
+                      The first player to score 100 or more points wins.<br>
+                      For example, the first player, Anne, begins a turn with a roll of 5. Anne could hold and score 5 points, but chooses to roll again. Anne rolls a 2, and could hold with a turn total of 7 points, but chooses to roll again. Anne rolls a 1, and must end her turn without scoring. The next player, Bob, rolls the sequence 4-5-3-5-5, after which he chooses to hold, and adds his turn total of 22 points to his score.</p>
+                      <br>
+                      Gameplay source: <a href="https://en.wikipedia.org/wiki/Pig_(dice_game)">Wikipedia</a>
+                  </div>
+
+                </div>
+
+              </div>
             </div>
-          </div>
+
+
+          </div><!-- end row-->
 
         </div>
       </div>
 
-      <div id="rules">
-        <div class="panel panel-info">
-          <div class="panel-body">
-            <h2>Objective</h2>
-            <p>The objective of Pig Dice Game is to score 100 points before the opponent(s) do(es). The Pig game is played with a single six-sided die.</p>
-            <h2>Gameplay</h2>
-            <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
-              <ul>
-                <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
-                <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
-                <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
-              </ul>
-              The first player to score 100 or more points wins.<br>
-              For example, the first player, Anne, begins a turn with a roll of 5. Anne could hold and score 5 points, but chooses to roll again. Anne rolls a 2, and could hold with a turn total of 7 points, but chooses to roll again. Anne rolls a 1, and must end her turn without scoring. The next player, Bob, rolls the sequence 4-5-3-5-5, after which he chooses to hold, and adds his turn total of 22 points to his score.</p>
-              <br>
-              Gameplay source: <a href="https://en.wikipedia.org/wiki/Pig_(dice_game)">Wikipedia</a>
-          </div>
 
-        </div>
-
-      </div>
     </div>
 
 

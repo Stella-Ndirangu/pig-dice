@@ -19,10 +19,19 @@ body{
 }
 .heading h1{
   font-size: 40px;
+  font-family: 'Abril Fatface';
   font-weight: bolder;
 }
 #intro-form{
   text-align: center;
+}
+.player1area .player1{
+  font-family: 'Charm';
+  font-size: 30px;
+}
+.player2area .player2{
+  font-family: 'Charm';
+  font-size: 30px;
 }
 form{
   margin: 0 auto;
@@ -49,9 +58,7 @@ button.submitbtn{
   padding: 16px 20px;
   width: 100%;
 }
-/*#game{
-  display: none;
-}*/
+
 #rules .panel{
   border-color: #FBD3D1;
 }
@@ -61,9 +68,15 @@ button.submitbtn{
 #rules .panel-body{
   background-color: #FBD3D1;
   color: #696969;
+  font-family: 'Charm';
+  font-size: 20px;
 }
 #rules h2{
   text-decoration: underline;
+  font-family: 'Varela Round';
+}
+#game {
+  display: none;
 }
 #game .panel-body{
   background-color: #FBD3D1;
@@ -110,6 +123,56 @@ button.submitbtn{
 .player2Win{
   display: none;
 }
+.player1area #die1{
+  background-color: #A1BAE2;
+  border-bottom: 0px;
+  border-right: 0px;
+  color: #FBD3D1;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 8px 10px;
+  width: 20%;
+}
+.player2area #die2{
+  background-color: #A1BAE2;
+  border-bottom: 0px;
+  border-right: 0px;
+  color: #FBD3D1;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 8px 10px;
+  width: 20%;
+}
+.player1area #passbutton1{
+  background-color: #A1BAE2;
+  border-bottom: 0px;
+  border-right: 0px;
+  color: #FBD3D1;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 8px 10px;
+  width: 20%;
+}
+.player2area #passbutton2{
+  background-color: #A1BAE2;
+  border-bottom: 0px;
+  border-right: 0px;
+  color: #FBD3D1;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 8px 10px;
+  width: 20%;
+}
+#game .scoreClass {
+  font-family: 'Varela Round';
+  font-size: 20px;
+  font-weight: bold;
+}
+#game .turnClass {
+  font-family: 'Varela Round';
+  font-size: 20px;
+  font-weight: bold;
+}
 button.playAgain{
   display: none;
   background-color: #A1BAE2;
@@ -120,4 +183,13 @@ button.playAgain{
   font-size: 22px;
   padding: 16px 20px;
   width: 20%;
+}
+.diceRoll p{
+  font-family: 'Charm';
+}
+.player1Win{
+  font-size: 20px;
+}
+.player2Win{
+  font-size: 20px;
 }
