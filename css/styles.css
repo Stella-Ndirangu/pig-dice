@@ -95,3 +95,15 @@ button.submitbtn{
   pointer-events: none;
   opacity: 0.5;
 }
+#turnPlayer1 {
+  display: none;
+}
+#turnPlayer2{
+  display: none;
+}
+.noScore{
+  display: none;
+}
+.winner{
+  display:none;
+}
