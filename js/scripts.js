@@ -85,6 +85,26 @@ $(document).ready(function(){
       $(".player1area #turnPlayer1").show();
       $(".turnTotal2").text("");
     }
+    if (score1 >= 100) {
+      $(".player1Win").show();
+      //$("#p1").addClass("disableDiv");
+      //$("#p2").addClass("disableDiv");
+      $(".diceRoll .playAgain").show();
+      $(".diceRoll .playAgain").click(function(){
+        location.reload();
+      });
+    } else if (score2 >= 100) {
+      $(".player2Win").show();
+      //$("#p1").addClass("disableDiv");
+      //$("#p2").addClass("disableDiv");
+      $(".diceRoll .playAgain").show();
+      $(".diceRoll .playAgain").click(function(){
+        location.reload();
+      });
+    } else {
+      $(".diceRoll").text();
+    }
+
   });
 
 

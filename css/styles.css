@@ -104,6 +104,20 @@ button.submitbtn{
 .noScore{
   display: none;
 }
-.diceRoll .win{
-  display:none;
+.player1Win{
+  display: none;
+}
+.player2Win{
+  display: none;
+}
+button.playAgain{
+  display: none;
+  background-color: #A1BAE2;
+  border-bottom: 0px;
+  border-right: 0px;
+  color: #FBD3D1;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 16px 20px;
+  width: 20%;
 }
