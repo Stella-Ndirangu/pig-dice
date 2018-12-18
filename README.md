@@ -41,6 +41,8 @@ This project has been created using HTML 5, CSS AND Javscript.
 Important points:
 * [JS-Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 * [JS Logical operators](https://www.w3schools.com/js/js_comparisons.asp)
+## Link to Live site on Github Pages
+* [PIG DICE](https://stella-ndirangu.github.io/pig-dice/)
 ## Support and contact details
 If you any issues or have questions, you can reach me here: stellaw.ndirangu@gmail.com. Feel free to share or make a contribution to this code.
 ### License
